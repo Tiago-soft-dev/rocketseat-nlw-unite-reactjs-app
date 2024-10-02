@@ -11,8 +11,7 @@ export function Header(){
             </nav>
         </div>
     )
-}<<<<<<< HEAD
-import logo from '../assets/logo.svg'
+}
 
 export function Header(){
     return (
