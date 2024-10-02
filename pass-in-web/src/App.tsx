@@ -1,10 +1,13 @@
+import { AttendeeList } from "./components/attendee-list"
+import { Header } from "./components/header"
+
  interface MeuBtnProps {
   texto : string
  }
  
  function MeuBotao(props: MeuBtnProps){
   return (
-  <button className="button">{props.texto}</button>
+  <button className="h-10 bg-orange-600">{props.texto}</button>
   )
  }
  
@@ -12,11 +15,9 @@
   
 
   return (
-    <div>
-      <MeuBotao texto='Clique Aqui'/>
-      <MeuBotao texto='Btn 2'/>
-      <MeuBotao texto='Btn3'/>
-      <MeuBotao texto='oi' />
+    <div className="max-w-[1216px] mx-auto py-5 flex flex-col gap-5">
+      <Header />
+      <AttendeeList />
 
     </div>
   )
